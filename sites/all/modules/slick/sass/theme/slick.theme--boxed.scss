@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+@import "compass/typography/vertical_rhythm";
+
+// Import variables, abstractions, base styles and components using globbing.
+@import "../variables/**/*";
+@import "../abstractions/**/*";
+/**
+ * @file
+ * Detailed stylings are all yours, get yourself dirty.
+ */
+.slick--skin--boxed {
+  // Applies only if we have 1 slideToShow, not carousel.
+  &.slick--slider {
+    .slick__slide {
+      // Prevent text overlapping with arrows on small devices.
+      .slide__caption {
+        visibility: hidden;
+      }
+
+      &.slick-active .slide__caption {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@include breakpoint($ipad, true) {
+  // Spaces only reasonable for larger device.
+  .slick--skin--boxed {
+    .slick-list {
+      margin: 0 60px;
+    }
+  }
+}
