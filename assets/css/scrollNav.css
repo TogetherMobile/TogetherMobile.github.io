@@ -1,16 +1,18 @@
 .scroll-nav {
     max-height: 100vh;
     overflow-y: auto;
+    width: 200px;
 }
-.scroll-nav__list, 
+.scroll-nav__list,
 .scroll-nav__sub-list {
     list-style-type: none;
+    padding-left: 0;
 }
 .scroll-nav__list {
     font-size: 14px;
 }
 .scroll-nav__item {
-
+    margin-bottom: 5px;
 }
 .scroll-nav__item.active {
 
@@ -28,8 +30,24 @@
     /*max-height: 100vh;*/
 }
 .scroll-nav__sub-item {
-
+    margin-bottom: 10px;
+}
+.scroll-nav__sub-item:first-child {
+    padding-top: 5px;
 }
 .scroll-nav__sub-item.active {
 
+}
+.scroll-nav__link {
+    display: block;
+    padding: 5px 15px;
+    border-left: 4px solid transparent;
+    color: #777;
+}
+.scroll-nav__sub-link {
+    display: block;
+    padding: 0;
+    padding-left: 34px;
+    background: none;
+    color: #777;
 }
