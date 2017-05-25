@@ -1,0 +1,9 @@
+<div class="callout-block callout-{{ include.type }}">
+    <div class="icon-holder">
+        <i class="fa fa-exclamation-triangle"></i>
+    </div><!--//icon-holder-->
+    <div class="content">
+        <h4 class="callout-title">{{ include.title }}</h4>
+        <p>{{ include.message | markdownify }}</p>
+    </div><!--//content-->
+</div><!--//callout-block-->
