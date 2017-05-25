@@ -20,8 +20,7 @@ The `displayIdentifier` at the end of the URL is the ID that the Rivet platform 
 
 There are three ways to affect the results the API returns for a display. You can configure a display using the Rivet Administrative Interface, moderate content using the Rivet Administrative Interface, and [filter results](#filtering_results) in the call to the API. When you configure a display you can specify the sources for the content of a display. You can also configure the publishing mode of a display. If you select "hide response before moderation" as the publishing mode, the Content API will return only approved content.
 
-The Content API never returns rejected content.
-{:.fa-thumbs-up.icon-holder .callout-block .callout-info}
+{% include callout.html type="info" title="Note" message="The Content API never returns rejected content." %}
 
 ### Optional query parameters
 
@@ -35,8 +34,7 @@ The Content API never returns rejected content.
 | i |Tracking identifier that you define. This allows you to track user activity through our analytics. | None |
 {:.table .table-responsive}
 
-**Note:** The limit and offset parameters support paging through content.
-{:.fa-thumbs-up.icon-holder .callout-block .callout-success}
+{% include callout.html type="success" title="Note:" message="The limit and offset parameters support paging through content." %}
 
 ### <a name="filtering_results"></a>Filtering results
 
@@ -71,9 +69,7 @@ The following is an example of a JSON page context and its corresponding Rison q
 q=(t:(city:!(Austin,London),type:day),g:(lat:40.833333333,lon:14.25,r:'5 km')
 ```
 
-**Note:** The Rison qualifier must be URL encoded.
-{:.fa-thumbs-up.icon-holder .callout-block .callout-success}
-
+{% include callout.html type="danger" title="Important:" message="The Rison qualifier must be URL encoded." %}
 
 For more information about Rison please see [https://github.com/Nanonid/rison](https://github.com/Nanonid/rison).
 
@@ -81,8 +77,7 @@ For more information about Rison please see [https://github.com/Nanonid/rison](h
 
 In addition to filtering it is possible to request specific pieces of content from the API. You can ask for content by its submission identifier. This Rivet Administrative Interface shows submission identifiers in the moderation interface. The submission identifier is also in the response from the Content API at the `identifier.id` path for each data element.
 
-The Content API will return the content you specify regardless of the publishing mode. The Content API never returns rejected content
-{:.fa-thumbs-up.icon-holder .callout-block .callout-info}
+{% include callout.html type="info" title="Note" message="The Content API will return the content you specify regardless of the publishing mode. The Content API never returns rejected content." %}
 
 The following is an example of a JSON page context that asks for two specific pieces of content followed by it's corresponding Rison qualifier:
 
@@ -102,9 +97,7 @@ The following is an example of a JSON page context that asks for two specific pi
 q=(s:!('4992d848-d0f0-11e5-9577-22000afe5763','7bafdc00-bba0-11e5-9356-22000ae60646'))
 ```
 
-**Note:** The Rison qualifier must be URL encoded.
-{:.fa-thumbs-up.icon-holder .callout-block .callout-success}
-
+{% include callout.html type="danger" title="Important:" message="The Rison qualifier must be URL encoded." %}
 
 ### Qualifier keys
 
@@ -117,8 +110,7 @@ The qualifier supports three top-level keys for tags, geolocations, and submissi
 | s    | Analogous to the submissionIds key in a display’s page context |
 {:.table .table-responsive}
 
-**Note:** While the top-level Rison keys are shortened to make request URLs more compact, the keys of the tags and geoRegion objects are not shortened.
-{:.fa-thumbs-up.icon-holder .callout-block .callout-success}
+{% include callout.html type="info" title="Note:" message="While the top-level Rison keys are shortened to make request URLs more compact, the keys of the tags and geoRegion objects are not shortened." %}
 
 ### <a name="sorting_results"></a>Sorting results
 
@@ -553,8 +545,7 @@ All data objects have these properties.
 | valid | A boolean value that indicates whether the piece of content is valid. If there are any issues processing a piece of content the value of this property will be false. |
 {:.table .table-responsive}
 
-**Note:** The `sortings` property of each data object dictates the order our display shows ingredients. Do not assume the the order of the ingredients will always be the same. Each data object in the response and its subsequent properties should be treated independently.
-{:.fa-fa-exclamation-triangle.icon-holder .callout-block .callout-danger}
+{% include callout.html type="danger" title="Important:" message="The `sortings` property of each data object dictates the order our display shows ingredients. Do not assume the the order of the ingredients will always be the same. Each data object in the response and its subsequent properties should be treated independently." %}
 
 ## Ingredients
 
@@ -639,8 +630,7 @@ Primitive properties that apply to photo ingredient types.
 
 Properties that apply only to question group ingredients.
 
-**Note:** The question group ingredient does not use primitives and is instead a list of objects with the following properties.
-{:.fa-thumbs-up.icon-holder .callout-block .callout-success}
+{% include callout.html type="warning" title="Note:" message="The question group ingredient does not use primitives and is instead a list of objects with the following properties." %}
 
 | name | description |
 | ---- | ----------- |
