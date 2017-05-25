@@ -1,6 +1,17 @@
+
+
 <div class="callout-block callout-{{ include.type }}">
     <div class="icon-holder">
-        <i class="fa fa-exclamation-triangle"></i>
+      {% case include.type %}
+        {% when 'warning' %}
+          <i class="fa fa-bug"></i>
+        {% when 'success' %}
+          <i class="fa fa-thumbs-up"></i>
+        {% when 'danger' %}
+          <i class="fa fa-exclamation-triangle"></i>
+        {% else %}
+          <i class="fa fa-info-circle"></i>
+      {% endcase %}
     </div><!--//icon-holder-->
     <div class="content">
         <h4 class="callout-title">{{ include.title }}</h4>
