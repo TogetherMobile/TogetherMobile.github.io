@@ -50,7 +50,7 @@ The following is an example of a JSON page context and its corresponding Rison q
 
 #### JSON
 
-```
+```json
 "pageContext": {
    "tags": {
     "city": ["Austin", "London"],
@@ -83,7 +83,7 @@ The following is an example of a JSON page context that asks for two specific pi
 
 #### JSON
 
-```
+```json
 "pageContext": {
   "submissionIds": [
     "4992d848-d0f0-11e5-9577-22000afe5763",
@@ -122,7 +122,7 @@ Rivet displays use the page context for specifying the sorting of content. Becau
 
 #### JSON
 
-```
+```json
 "pageContext": {
   "sortOrder": [
     {
@@ -203,7 +203,7 @@ The response from the API is a JSON object. Successful responses from the Conten
 ### Example response
 Below is an example of a response from the API from the display for the [Rivet culture page](http://www.rivet.works/our-culture).
 
-```
+```json
 {
   "aggregations": {
   },
@@ -707,7 +707,7 @@ Primitive properties that apply to video ingredient types.
 
 If the API encounters an error, the response from the API is the following.
 
-```
+```json
 { 
   "success": false, 
   "error": -1, 
