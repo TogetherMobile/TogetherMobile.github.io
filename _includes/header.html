@@ -10,7 +10,7 @@
         </div><!--//branding-->
         <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
-            <li class="active"><a href="/documentation">Documentation</a></li>
+            <li class="active"><a href={{ layout.collection-location }}>{{ layout.collection-name }}</a></li>
             {% if page.exclude != true %}{% if page.title != nil %}<li class="active">{{page.title}}</li>{% endif %}{% endif %}
         </ol>
     </div><!--//container-->

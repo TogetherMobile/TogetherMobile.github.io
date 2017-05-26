@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: documentation
 title: Submission API
 exclude: true
 ---
