@@ -1,35 +1,67 @@
 .scroll-nav {
     max-height: 100vh;
     overflow-y: auto;
+    width: 200px;
 }
-.scroll-nav__list, 
-.scroll-nav__sub-list {
-    list-style-type: none;
+.scroll-nav a,
+.scroll-nav a:link,
+.scroll-nav a:visited,
+.scroll-nav a:focus {
+    text-decoration: none;
+    color: #777;
+}
+.scroll-nav a:hover,
+.scroll-nav a:active {
+    text-decoration: none;
+    color: #339597;
 }
 .scroll-nav__list {
+    padding-left: 0;
+    list-style-type: none;
     font-size: 14px;
 }
 .scroll-nav__item {
-
+    margin-bottom: 5px;
 }
-.scroll-nav__item.active {
-
+.scroll-nav__link {
+    display: block;
+    padding: 5px 15px;
+    border-left: 4px solid transparent;
+    color: #777;
+}
+.scroll-nav__item.active > .scroll-nav__link,
+.scroll-nav__item.active > .scroll-nav__link:link,
+.scroll-nav__item.active > .scroll-nav__link:visited {
+    border-color: #339597;
+    color: #339597;
 }
 .scroll-nav__sub-list {
+    max-height: 0;
     overflow: hidden;
+    overflow-y: auto;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 12px;
     transition: max-height 0.5s ease-in-out;
     will-change: max-height;
-    font-size: 12px;
-    display: none;
-    /*max-height: 0;*/
 }
 .scroll-nav__item.in-view .scroll-nav__sub-list {
-    display: block;
-    /*max-height: 100vh;*/
+    max-height: 100vh;
 }
 .scroll-nav__sub-item {
-
+    margin-bottom: 10px;
 }
-.scroll-nav__sub-item.active {
-
+.scroll-nav__sub-item:first-child {
+    padding-top: 5px;
+}
+.scroll-nav__sub-link {
+    display: block;
+    padding: 0;
+    padding-left: 34px;
+    background: none;
+}
+.scroll-nav__sub-item.active > .scroll-nav__sub-link,
+.scroll-nav__sub-item.active > .scroll-nav__sub-link:link,
+.scroll-nav__sub-item.active > .scroll-nav__sub-link:visited {
+    color: #339597;
 }

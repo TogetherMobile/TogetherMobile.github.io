@@ -1,6 +1,6 @@
-/*! scrollNav - v2.6.0 - 2015-02-19
+/*! scrollNav - v2.7.1 - 2017-05-26
 * http://scrollnav.com
-* Copyright (c) 2015 James Wilson; Licensed MIT */
+* Copyright (c) 2017 James Wilson; Licensed MIT */
 (function($) {
 
   // Animate scrolling to section location
@@ -8,6 +8,10 @@
     if ( $(value).length > 0 ) {
       var destination = $(value).offset().top;
       speed = animated ? speed : 0;
+
+	    // Add a class to the scrolled-to section
+	    $('.' + S.settings.className + '__focused-section').removeClass(S.settings.className + '__focused-section');
+	    $(value).addClass(S.settings.className + '__focused-section');
 
       $('html:not(:animated),body:not(:animated)')
         .animate({scrollTop: destination - offset }, speed );
@@ -220,9 +224,21 @@
         return (section.top_offset >= boundry_top && section.top_offset <= boundry_bottom) || (section.bottom_offset > boundry_top && section.bottom_offset < boundry_bottom) || (section.top_offset < boundry_top && section.bottom_offset > boundry_bottom);
       };
 
-      $.each(S.sections.data, function() {
-        if ( in_view(this) ) {
-          sections_active.push(this);
+      $.each(S.sections.data, function(i) {
+        if ( !S.settings.showTopLink ) {
+          if ( in_view(this) ) {
+            sections_active.push(this);
+          }
+        } else {
+          if (i > 0) {
+            if ( in_view(this) ) {
+              sections_active.push(this);
+            }
+          } else {
+            if ( in_view(this) && win_top === 0) {
+              sections_active.push(this);
+            }
+          }
         }
         $.each(this.sub_sections, function() {
           if ( in_view(this) ) {
