@@ -38,3 +38,5 @@ exclude:
 collections:
   documentation:
     output: true
+  guides:
+    output: true

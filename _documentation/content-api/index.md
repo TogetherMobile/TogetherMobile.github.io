@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: documentation
 title: Content API
 summary: The Content API allows you to access the assets your customers contribute. You can use this API to build your own custom displays.
 ---
@@ -101,7 +101,7 @@ q=(s:!('4992d848-d0f0-11e5-9577-22000afe5763','7bafdc00-bba0-11e5-9356-22000ae60
 
 ### Qualifier keys
 
-The qualifier supports three top-level keys for tags, geolocations, and submission identifiers. See the section “Website Integration” in the “Rivet Implementation Guide” for more information about the tags and geoRegion qualifiers.
+The qualifier supports three top-level keys for tags, geolocations, and submission identifiers. See the section “[Website Integration](/guides/implementation/#website_integration)” in the [*Rivet Implementation Guide*](/guides/implementation) for more information about the tags and geoRegion qualifiers.
 
 | name | description                                                    |
 | ---- | -------------------------------------------------------------- |
@@ -145,7 +145,7 @@ sort=!((f:tags.rank,o:asc),(f:submissionDate,o:desc))
 
 ### Sorting keys
 
-The sort order supports two top-level keys for the field to sort by and the order of the sort. See the section “Website Integration” in the “Rivet Implementation Guide” for more information about sorting.
+The sort order supports two top-level keys for the field to sort by and the order of the sort. See the section “[Website Integration](/guides/implementation/#website_integration)” in the [*Rivet Implementation Guide*](/guides/implementation) for more information about sorting.
 
 | name | description                                                    |
 | ---- | -------------------------------------------------------------- |

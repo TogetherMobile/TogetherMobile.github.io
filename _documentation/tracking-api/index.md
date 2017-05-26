@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: documentation
 title: Tracking API
 summary: The Tracking API enables Rivet analytics and reporting data work for you when you build custom displays.
 ---
