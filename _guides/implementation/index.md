@@ -129,8 +129,8 @@ Paste the code snippet at the bottom of the page right before the </body> tag. R
 
 If you wish to filter the photos using tags (to display only photos of a product with a specific SKU, for instance) you must include a page context section in the JavaScript code. For example, to display photos of the product with the SKU abc-123, you would modify the embed as follows:
 
-``` javascript
-<script type="text/javascript" src="http://webapp.rivet.works/rivet.min.js "></script>
+```javascript
+<script type="text/javascript" src="http://webapp.rivet.works/rivet.min.js"></script>
 <script type="text/javascript">
  	rivet.config({
  		embeds: {
@@ -162,7 +162,7 @@ If you further wanted to filter using the tag color with a color of “blue”, 
 pageContext: {
  	"tags": {
  	   "sku": "xyz-890",
- 	   “color”: “blue”
+ 	   "color": "blue"
  	}
 }
 ```
@@ -177,7 +177,7 @@ In general, tags are additive (i.e. they are combined using a logical AND). The 
 pageContext: {
  	"tags": {
  	   "sku": "abc-123",
- 	   “color”: “blue”
+ 	   "color": "blue"
  	}
 }
 ```
@@ -186,7 +186,7 @@ The following page context displays the photos that are tagged with the tag sku 
 
 ```json
 "pageContext": {
-	"tags": {"sku": ["abc-123", “xyz-890"]}
+	"tags": {"sku": ["abc-123", "xyz-890"]}
 }
 ```
 
@@ -196,12 +196,13 @@ If the value for a tag is empty, the embed displays photos that have the tag reg
 "pageContext": {
 	"tags": {"sku": ""}
 }
+```
 
 An embed with the following page context displays photos that have a category tag with values of “widget” or “gadget” that also have any value for the sku tag.
 
 ```json
 "pageContext": {
-	"tags": {"category": [“widget", "gadget"],
+	"tags": {"category": ["widget", "gadget"],
                "sku": ""}
 }
 ```
@@ -215,6 +216,7 @@ The page context can also restrict an embed to displaying photos taken within a 
  		"r": "5 km"
  	}
 }
+```
 
 The units for the radius can be kilometers or miles. The default is miles.
 
