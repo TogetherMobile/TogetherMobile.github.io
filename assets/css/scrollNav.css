@@ -13,7 +13,7 @@
 .scroll-nav a:hover,
 .scroll-nav a:active {
     text-decoration: none;
-    color: #339597;
+    color: #00cbcb;
 }
 .scroll-nav__list {
     padding-left: 0;
@@ -32,8 +32,8 @@
 .scroll-nav__item.active > .scroll-nav__link,
 .scroll-nav__item.active > .scroll-nav__link:link,
 .scroll-nav__item.active > .scroll-nav__link:visited {
-    border-color: #339597;
-    color: #339597;
+    border-color: #00cbcb;
+    color: #00cbcb;
 }
 .scroll-nav__sub-list {
     max-height: 0;
@@ -63,5 +63,5 @@
 .scroll-nav__sub-item.active > .scroll-nav__sub-link,
 .scroll-nav__sub-item.active > .scroll-nav__sub-link:link,
 .scroll-nav__sub-item.active > .scroll-nav__sub-link:visited {
-    color: #339597;
+    color: #00cbcb;
 }
