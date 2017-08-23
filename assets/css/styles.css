@@ -75,8 +75,8 @@ a.btn .fa {
 }
 .btn-primary,
 a.btn-primary {
-  background: #40babd;
-  border: 1px solid #40babd;
+  background: #00cbcb;
+  border: 1px solid #00cbcb;
   color: #fff !important;
 }
 .btn-primary:hover,
@@ -354,7 +354,7 @@ select {
 }
 .branding .icon {
   font-size: 24px;
-  color: #40babd;
+  color: #00cbcb;
 }
 .body-green .branding .icon {
   color: #75c181;
@@ -401,7 +401,7 @@ select {
   padding: 15px 0;
 }
 .footer a {
-  color: #40babd;
+  color: #00cbcb;
 }
 .footer .fa-heart {
   color: #EA5395;
@@ -418,7 +418,7 @@ select {
   margin-bottom: 30px;
 }
 .doc-header .doc-title {
-  color: #40babd;
+  color: #00cbcb;
   margin-top: 0;
   font-size: 36px;
 }
@@ -803,7 +803,7 @@ select {
 }
 .doc-menu > li > a:hover,
 .doc-menu > li > a:focus {
-  color: #40babd;
+  color: #00cbcb;
   text-decoration: none;
   background: none;
 }
@@ -833,8 +833,8 @@ select {
 }
 .doc-menu > li.active > a {
   background: none;
-  border-left: 4px solid #40babd;
-  color: #40babd;
+  border-left: 4px solid #00cbcb;
+  color: #00cbcb;
   font-weight: 600;
 }
 .body-green .doc-menu > li.active > a {
@@ -880,7 +880,7 @@ select {
   background: none;
 }
 .doc-sub-menu > li > a:hover {
-  color: #40babd;
+  color: #00cbcb;
   text-decoration: none;
   background: none;
 }
@@ -907,7 +907,7 @@ select {
 }
 .doc-sub-menu > li.active > a {
   background: none;
-  color: #40babd;
+  color: #00cbcb;
 }
 .body-green .doc-sub-menu > li.active > a {
   color: #75c181;
@@ -1099,7 +1099,7 @@ select {
 }
 .landing-page .branding .icon {
   font-size: 32px;
-  color: #40babd;
+  color: #00cbcb;
 }
 .landing-page .tagline {
   font-weight: 600;
@@ -1200,7 +1200,7 @@ select {
   color: #2d8284;
 }
 .cards-section .item-primary .icon {
-  color: #40babd;
+  color: #00cbcb;
 }
 .cards-section .item-green .item-inner {
   border-top: 3px solid #75c181;
