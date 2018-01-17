@@ -119,7 +119,7 @@ Begin by copying the embed code from the Embeds page of the Rivet Admin. The cod
 <script>
    rivet.config({
  	   "embeds": {
- 		"AcmeEmbed": "acme-photo-div"
+ 			"AcmeEmbed": "acme-photo-div"
  		}
  	   });
 </script>
