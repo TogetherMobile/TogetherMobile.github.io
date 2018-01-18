@@ -17,7 +17,7 @@ The integration process involves the following tasks:
 
 ### Create Role
 
-It is best to create a separate role for the Rivet integration. Rivet requires access to certain resource that you will assign to the role. Creating a distinct role for Rivet isolates the needs of Rivet from any other roles in your Magento instance.
+It is best to create a separate role for the Rivet integration. Rivet requires access to certain resources that you will assign to the role. Creating a distinct role for Rivet isolates the needs of Rivet from any other roles in your Magento instance.
 
 {% include callout.html type="info" title="Note" message="The name of the role does not affect the Rivet integration." %}
 
