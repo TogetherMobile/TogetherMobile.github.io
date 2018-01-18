@@ -3,7 +3,7 @@ layout: guide
 title: Magento 1 Implementation Guide
 summary: This document provides instructions for completing the technical tasks associated with configuring a Magento 1 instance to integrate with Rivet’s e-commerce functionality and adding Rivet functionality to your Magento site.
 ---
-This document provides instructions for completing the technical tasks associated with configuring a Magento 1 instance to integrate with Rivet’s e-commerce functionality and adding adding Rivet functionality to your Magento site. This guide supplements the [Rivet Implementation Guide](/guides/implementation/)
+This document provides instructions for completing the technical tasks associated with configuring a Magento 1 instance to integrate with Rivet’s e-commerce functionality and adding Rivet functionality to your Magento site. This guide supplements the [Rivet Implementation Guide](/guides/implementation/)
 
 ## Configure Magento
 This section provides instructions for completing the technical tasks associated with configuring a Magento 1 instance to integrate with Rivet’s e-commerce functionality.
