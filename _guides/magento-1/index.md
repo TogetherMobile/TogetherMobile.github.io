@@ -99,7 +99,7 @@ The following sections show examples of adding conversion tracking to your order
 
 ### Conversion Tracker
 
-Add the following to the order confirmation template at /app/design/frontend/`<your-package-name>`/default/template/checkout/success.phtml:
+Add the following to the order confirmation template at `/app/design/frontend/<your-package-name>/default/template/checkout/success.phtml`:
 
 ```php
 <?php
