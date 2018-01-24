@@ -82,8 +82,6 @@ When you create the Rivet user, please ensure you create and set an API Key. The
 
 {% include callout.html type="danger" title="Important" message="Make sure to save the API Key elsewhere as you will not be able to get it from Magento after you save the Rivet user." %}
 
-<!-- {% include callout.html type="info" title="Note" message="The name of the user does not affect the Rivet integration." %} -->
-
 ### Assign Role to User
 
 For the Rivet user to have access to the appropriate Magento resources you need to assign the role you created earlier to the Rivet user.
