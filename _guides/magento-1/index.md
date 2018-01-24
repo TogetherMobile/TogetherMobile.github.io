@@ -9,15 +9,15 @@ This document provides instructions for completing the technical tasks associate
 This section provides instructions for completing the technical tasks associated with configuring a Magento 1 instance to integrate with Rivet’s e-commerce functionality.
 
 The integration process involves the following tasks:
-- Create a role for the Rivet integration to use.
+- Create a SOAP/XML-RPC role for the Rivet integration to use.
 - Assign resource access to the Rivet role.
 - Create a user for the Rivet integration to use.
 - Assign the Rivet role to the Rivet user.
 - Communicate the Rivet user’s API Key to Rivet Customer Success.
 
-### Create Role
+### Create SOAP/XML-RPC Role
 
-It is best to create a separate role for the Rivet integration. Rivet requires access to certain resources that you will assign to the role. Creating a distinct role for Rivet isolates the needs of Rivet from any other roles in your Magento instance.
+It is best to create a separate SOAP/XML-RPC role for the Rivet integration. Rivet requires access to certain resources that you will assign to the role. Creating a distinct role for Rivet isolates the needs of Rivet from any other roles in your Magento instance.
 
 {% include callout.html type="info" title="Note" message="The name of the role does not affect the Rivet integration." %}
 
@@ -74,23 +74,21 @@ The Rivet Magento 1 integration requires access to the following resources. Plea
 - Catalog Inventory
   - Retrieve stock data
 
-### Create User
+### Create SOAP/XML-RPC User
 
-It is best to create a user for the Rivet integration. Creating a distinct user for Rivet allows you to manage Rivet’s access apart from any other users.
+It is best to create a SOAP/XML-RPC user for the Rivet integration. Creating a distinct user for Rivet allows you to manage Rivet’s access apart from any other users.
 
 When you create the Rivet user, please ensure you create and set an API Key. The API Key allows Rivet’s system to authenticate to your Magento instance.
 
 {% include callout.html type="danger" title="Important" message="Make sure to save the API Key elsewhere as you will not be able to get it from Magento after you save the Rivet user." %}
 
-{% include callout.html type="info" title="Note" message="The name of the user does not affect the Rivet integration." %}
-
 ### Assign Role to User
 
 For the Rivet user to have access to the appropriate Magento resources you need to assign the role you created earlier to the Rivet user.
 
-### Communicate the Rivet users API Key
+### Communicate the Rivet users Name and API Key
 
-Send [Rivet Customer Success](mailto:support@rivet.works) the API key that you saved when you created the Rivet user earlier.
+Send [Rivet Customer Success](mailto:support@rivet.works) the Name and API key that you saved when you created the Rivet user earlier.
 
 ## Add Rivet to your site
 Magento uses theme templates for customizing the store appearance and layout. You need to edit the template files directly in the file system. You can also edit the files remotely, upload, and overwrite the existing files. This section supplements the [Rivet Implementation Guide](/guides/implementation/).
