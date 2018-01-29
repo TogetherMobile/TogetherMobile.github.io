@@ -110,7 +110,7 @@ Add the following to the order confirmation template at `/app/design/frontend/<y
 
 <script type="text/javascript" src="//webapp.rivet.works/conversion.min.js"></script>
 <script>rivet.config({
-    "conversionKey": {your conversion key},
+    "conversionKey": "_conversion key_",
     "md": {
         "customerID": "<?php echo $customerId ?>",
         "orderID": "<?php echo $orderId ?>",
@@ -130,16 +130,16 @@ Add the following to the order confirmation template at `/app/design/frontend/<y
 Add the following code to the PDP template at `/app/design/frontend/<your-package-name>/default/template/catalog/product/view.phtml`.
 
 ```html
-<div class="Block Moveable Panel" id="rvt-embed-1">
+<div class="Block Moveable Panel" id="customer-photos">
         <div class="BlockContent">
-                <div style="clear: both;" id="prod-film"> </div>
+                <div style="clear: both;" id="rvt-embed-1"> </div>
         </div>
 </div>
 
 <script type="text/javascript" src="//webapp.rivet.works/rivet.min.js"></script>
 
 <script> rivet.config ({
-        "embeds": { {your filmstrip’s display key}: "rvt-embed-1" },
+        "embeds": { "_your filmstrip’s display key_": "rvt-embed-1" },
         "pageContext": {
                 "tags": {
                         "productId": "<?php echo $this->getProduct()->getId(); ?>"
