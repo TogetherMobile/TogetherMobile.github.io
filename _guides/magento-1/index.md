@@ -110,19 +110,20 @@ Add the following to the order confirmation template at `/app/design/frontend/<y
 
 <script type="text/javascript" src="//webapp.rivet.works/conversion.min.js"></script>
 <script>rivet.config({
-    "conversionKey": "_conversion key_",
+    "conversionKey": "_CustomerConversionCode_",
     "md": {
         "customerID": "<?php echo $customerId ?>",
         "orderID": "<?php echo $orderId ?>",
         "cartTotal": "<?php echo $cartTotal ?>",
         "products": [
             <?php foreach ($products as $product){
-                    echo "{productID:'" . $product->getProductId() . "', unitPrice:'" . round($product->getPrice(),2) . "', quantity:'" . round($product->getQtyOrdered()) . "', description:'"$
+                    echo "{productID:'" . $product->getProductId() . "', unitPrice:'" . round($product->getPrice(),2) . "', quantity:'" . round($product->getQtyOrdered()) . "', description:'" . $product->getName() . "'},";
                 }
             ?>
         ]
   }
 });</script>
+
 ```
 
 ### Product Detail Page
