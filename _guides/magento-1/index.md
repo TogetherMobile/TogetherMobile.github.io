@@ -129,15 +129,12 @@ Add the following to the order confirmation template at `/app/design/frontend/<y
 ### Product Detail Page
 
 Add the following code to the PDP template at `/app/design/frontend/<your-package-name>/default/template/catalog/product/view.phtml`.
+You can find "_your filmstrip’s display key_" by logging into your Rivet Works account and clicking settings under your product display.
 
 ```html
-<div class="Block Moveable Panel" id="customer-photos">
-        <div class="BlockContent">
                 <div style="clear: both;" id="rvt-embed-1"> </div>
-        </div>
-</div>
 
-<script type="text/javascript" src="//webapp.rivet.works/rivet.min.js"></script>
+<script type="text/javascript" src="//webapp.rivet.works/reactLoader/bundle.js"></script>
 
 <script> rivet.config ({
         "embeds": { "_your filmstrip’s display key_": "rvt-embed-1" },
@@ -147,4 +144,17 @@ Add the following code to the PDP template at `/app/design/frontend/<your-packag
                 }
         }
 }); </script>
+```
+### Gallery Page
+
+Add the following code to your desired location for a customer gallery. 
+
+```html
+<div id="rvt-embed-1"></div>
+<script type="text/javascript" src="//webapp.rivet.works/reactLoader/bundle.js"></script>
+<script>rivet.config({
+"embeds": {
+    "_your gallery display key_": "rvt-embed-1"
+}
+});</script>
 ```
