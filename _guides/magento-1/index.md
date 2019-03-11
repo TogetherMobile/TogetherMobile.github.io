@@ -134,24 +134,24 @@ You can find "_your filmstrip’s display key_" by logging into your Rivet Works
 ```html
                 <div style="clear: both;" id="rvt-embed-1"> </div>
 
-<script type="text/javascript" src="//webapp.rivet.works/reactLoader/bundle.js"></script>
+<script type="text/javascript" src="//webapp.rivet.works/rivet.min.js"></script>
 
 <script> rivet.config ({
         "embeds": { "_your filmstrip’s display key_": "rvt-embed-1" },
         "pageContext": {
                 "tags": {
-                        "productId": "<?php echo $this->getProduct()->getId(); ?>"
+                        "productId": "<*?php echo $this->getProduct()->getData('sku'); ?>*"
                 }
         }
 }); </script>
 ```
 ### Gallery Page
 
-Add the following code to your desired location for a customer gallery. 
+Add the following code to your desired location for a customer gallery.
 
 ```html
 <div id="rvt-embed-1"></div>
-<script type="text/javascript" src="//webapp.rivet.works/reactLoader/bundle.js"></script>
+<script type="text/javascript" src="//webapp.rivet.works/rivet.min.js"></script>
 <script>rivet.config({
 "embeds": {
     "_your gallery display key_": "rvt-embed-1"
